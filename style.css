@@ -1,0 +1,31 @@
+button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 5px 5px 0 0;
+    outline: none;
+    background-color: red;
+    
+ 
+}
+div{
+    width: 200px;
+    height: 8px;
+    background-color: darkred;
+    border-radius: 0 0 5px 5px;
+     
+     
+}
+section:active div{
+    height: 4px;
+}
+section{
+    width: 200px;
+    height: 60px;
+}
+section:active{
+    transform: translateY(10px) scale(0.99);
+    
+   
+}
