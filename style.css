@@ -1,31 +1,57 @@
-button{
-    width: 200px;
-    height: 50px;
-    border: none;
-    font-size: 1.2em;
-    border-radius: 5px 5px 0 0;
-    outline: none;
-    background-color: red;
-    
- 
-}
-div{
-    width: 200px;
-    height: 8px;
-    background-color: darkred;
-    border-radius: 0 0 5px 5px;
-     
-     
-}
-section:active div{
-    height: 4px;
+* {
+    margin: 0;
+    padding: 0;
+
 }
 section{
-    width: 200px;
-    height: 60px;
+    position: relative;
+    width: 100%;
+    height: 1000px;
 }
-section:active{
-    transform: translateY(10px) scale(0.99);
+
+div{
+     
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+   animation-name: move;
+}
+div:nth-child(1){
+    background-color: blue;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+
     
-   
+}
+div:nth-child(2){
+    background-color: red;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: ;
+}
+div:nth-child(3){
+    background-color: yellow;
+}
+div:nth-child(4){
+    background-color: green;
+    
+}
+@keyframes move{
+    0%{
+        left: 0;
+    }
+    25%{
+        left: 500px;
+    }
+    50%{
+        top: 500px;
+    }
+    75%{
+        right: 500px;
+    }
+    100%{
+        bottom: 500px;
+    }
 }
